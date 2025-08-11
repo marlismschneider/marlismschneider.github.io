@@ -4,14 +4,18 @@ nav:
     title: Home
     link: /
   - slugid: 2
-    title: Teaching
-    link: /teaching/
-  - slugid: 3
     title: CV
     link: /assets/pdf/cv_schneider.pdf
+  - slugid: 3
+    title: Teaching
+    link: /teaching/
 
 profile-image: "/assets/img/logo.jpeg"
 footer-social-media:
+  - icon: "fa-solid fa-file-pdf"
+    link: /assets/pdf/cv_schneider.pdf
+  - icon: "fa-solid fa-chalkboard-teacher"
+    link: /teaching/
   - icon: "fa-solid fa-envelope"
     link: mailto:mailto:marlis.schneider@nhh.no
   - icon: "fa-brands fa-bluesky"
