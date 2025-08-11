@@ -1,0 +1,36 @@
+---
+layout: default
+title: Teaching
+description:
+permalink: /teaching/
+---
+<div class="container pt-4 pb-4 mb-5">
+    <div class="row">
+        <div class="sidebar col-md-3 col-12">
+            <div class="profile-container">
+                <img src="{{ site.data.siteSetting.profile-image }}" alt="Profile Image" class="profile-image img-fluid"/>
+            </div>
+
+            <div class="social-media-container container mt-3 mb-3">
+                {% for social in site.data.siteSetting.footer-social-media %}
+                <div class="social-item">
+                    <a href="{{ social.link }}" class="social-link" target="_blank">
+                        <span class="{{ social.icon }} social-icon"></span>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="right-section col-md-8 offset-md-1 col-12">
+            <div class="content-container">
+                <div class="about-section">
+                    <h2 class="content-header poppins-bold">{{ site.data.homeData.header-title }}</h2>
+                    <p class="content-description">{{ site.data.homeData.header-description | newline_to_br }}</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+</div>
