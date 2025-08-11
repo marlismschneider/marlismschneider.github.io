@@ -1,0 +1,54 @@
+---
+layout: default
+title: 
+description:
+---
+<div class="container">
+    <div class="row">
+        <div class="sidebar col-md-3 col-12">
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+                <img class="img-circle img-fluid center-block" src="{{ site.data.siteSetting.side-image }}" alt="Logo">
+
+                <h1>{{ site.data.siteSetting.title }}</h1>
+
+                {% if site.email %}
+                <p class="addr"><i class="fa-regular fa-envelope"></i>&nbsp;{{ site.email }}</p>
+                {% endif %}
+
+                <p>{{ site.description | default: site.github.project_tagline }}</p>
+            </header>
+
+
+        </div>
+
+        <div class="right-section col-md-8 offset-md-1 col-12">
+            <div class="content-container">
+                <div class="about-section">
+                    <h1 class="content-header">{{ site.data.homeData.header-title }}</h1>
+                    <p>{{ site.data.homeData.header-description }}</p>
+                </div>
+
+                <hr/>
+
+                <div class="work-section">
+                    <h1 class="content-header">{{ site.data.homeData.work-header }}</h1>
+                    <ul class="work-list">
+                        {% for item in site.data.homeData.work-list %}
+                        <li>
+                            <h4>{{ item.title }}</h4>
+                            <p>{{ item.description }}</p>
+                            <ul class="collaborators">
+                                {% for collaborator in item.collaborators %}
+                                <li>
+                                    <a href="{{ collaborator.link }}">{{ collaborator.name }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
