@@ -25,7 +25,7 @@ description:
             <div class="content-container">
                 <div class="about-section">
                     <h1 class="content-header">{{ site.data.homeData.header-title }}</h1>
-                    <p>{{ site.data.homeData.header-description }}</p>
+                    <p>{{ site.data.homeData.header-description | newline_to_br }}</p>
                 </div>
 
                 <hr/>
@@ -35,15 +35,42 @@ description:
                     <ul class="work-list">
                         {% for item in site.data.homeData.work-list %}
                         <li>
-                            <h4>{{ item.title }}</h4>
-                            <p>{{ item.description }}</p>
-                            <ul class="collaborators">
-                                {% for collaborator in item.collaborators %}
-                                <li>
-                                    <a href="{{ collaborator.link }}">{{ collaborator.name }}</a></li>
-                                {% endfor %}
-                            </ul>
+                            <div class="work-header">
+                                <h4>{{ item.title }}</h4>
+                            </div>
+                            {% if item.collaborators. %}
+                            <div class="work-collaborator">
+                                <div class="collaborators">
+                                    {% for collaborator in item.collaborators %}
+                                    {% if collaborator.name %}
+                                    {% if forloop.first %}
+                                    <span>with: </span>
+                                    {% endif %}
+                                    <a href="{{ collaborator.link }}">{{ collaborator.name }}{% if forloop.last %} {% else %},{% endif %}</a>
+                                    {% endif %} 
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            {% endif %}
+                            
+                            {% if item.abstract %}
+                            <p class="d-inline-flex gap-1">
+                                <span class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#work{{ forloop.index }}" aria-expanded="false" aria-controls="work{{ forloop.index }}">Abstract</span>
+                            </p>
+
+                            <div class="collapse" id="work{{ forloop.index }}">
+                                <div class="card card-body">
+                                    <p>{{ item.abstract }}</p>
+                                </div>
+                            </div>
+                            {% endif %}
+    
                         </li>
+                        {% if forloop.last %}
+                        {% else %}
+                        <hr/>
+                        {% endif %}
+                        
                         {% endfor %}
                     </ul>
                 </div>
