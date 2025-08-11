@@ -12,7 +12,7 @@ nav:
 
 profile-image: "/assets/img/logo.jpeg"
 footer-social-media:
-  - icon: "fa-solid fa-file-pdf"
+  - icon: "fa-regular fa-file-lines"
     link: /assets/pdf/cv_schneider.pdf
   - icon: "fa-solid fa-chalkboard-teacher"
     link: /teaching/
