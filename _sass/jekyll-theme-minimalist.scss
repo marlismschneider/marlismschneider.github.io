@@ -2,16 +2,39 @@
 @import "rouge-github";
 @import "colors";
 
+.abstract-box {
+  display: none;
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  border: 1px solid #f7f7f7;
+  font-size: 12px;
+}
+.toggle-abstract {
+  cursor: pointer;
+  font-size: 12px;
+  user-select: none;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+nav{
+  &.navbar {
+    background-color: #ffffff !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+}
+
 body {
-  background-color: var(--clr-bg);
+  background-color: #fff;
   padding:50px;
-  font: 15px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: var(--clr-text);
+  font: 16px "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
   font-weight:400;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--clr-h1-and-bold);
   margin:0 0 20px;
 }
 
@@ -38,11 +61,11 @@ h2 {
 }
 
 h3, h4, h5, h6 {
-  color: var(--clr-h-3-6);
+  color: #333333;
 }
 
 a {
-  color:var(--clr-a-text);
+  color:#333333;
   text-decoration:none;
 }
 
@@ -53,7 +76,6 @@ section{
 }
 
 a:hover, a:focus {
-  color: var(--clr-a-text-hvr);
 }
 
 a small {
@@ -77,6 +99,10 @@ ul.link {
   list-style-type: none; /* Remove bullets */
   margin: 0; /* To remove default bottom margin */ 
   padding: 0.4px; /* To remove default left padding */
+}
+
+ul.link a {
+  color: #333333 !important;
 }
 
 ul.link li + li {
@@ -162,10 +188,21 @@ kbd {
     a{
       font-size: 28px;
       font-weight: bold;
-      color: #6b2132 !important;
+      // color: #6b2132 !important;
     }
       
   }
+}
+
+.abstract-box {
+  p{
+    font-size: 14px;
+  }
+}
+
+p{
+  font-size: 16px;
+  line-height: 1.8;
 }
 
 .social-media-container{
@@ -183,7 +220,7 @@ kbd {
           transition: color 0.3s;
 
           &:hover{
-              color: #000000;
+              color: #333333;
           }
       }
 
@@ -217,7 +254,6 @@ kbd {
 }
 
 strong {
-  color:var(--clr-h1-and-bold);
   font-weight:700;
 }
 
