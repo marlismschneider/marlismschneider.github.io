@@ -3,6 +3,8 @@
 
 body{
     padding-top: 56px;
+    font-family: "Lato", Sans-serif;
+    color: #333333;
 }
 
 nav.navbar {
@@ -12,4 +14,9 @@ nav.navbar {
 
 ul{
     list-style: none;
+}
+
+p{
+    color: #555555;
+    line-height: 1.8;
 }

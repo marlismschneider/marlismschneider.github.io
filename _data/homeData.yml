@@ -44,3 +44,36 @@ work-list:
         link: https://gufaculty360.georgetown.edu/s/contact/00336000014RWL2AAO/rebecca-m-ryan
       - name: David Silverman
         link: https://dmsilverman.com/
+
+work-progress-header: "Work in Progress"        
+work-progress:
+- title: "Parental Beliefs About the Returns to Cognitive and Non‑Cognitive Skills and Investments in Children"
+  collaborators:
+    - name: Derek Rury 
+      link:
+
+publications-header: "Publications"
+publications-list:
+  - title: "Economic Mobility and Parents’ Opportunity Hoarding"
+    abstract: |
+      Two studies examine how American parents’ beliefs about the economy affect their support for policies and behaviors that give them and their child a “leg up,” even when this comes at the cost of other families’ access to educational and economic opportunities. Counterintuitively, the results show that believing in the American Dream increases affluent parents’ likelihood of engaging in such opportunity hoarding. In other words, affluent parents responded to the possibility that other people would be able to climb the socioeconomic ladder by trying to secure their own children’s future opportunities and limiting those available to less affluent parents and their children. These findings deepen understandings of the factors that contribute to rising economic inequalities.
+    collaborators:
+      - name: Mesmin Destin
+        link: https://psychology.northwestern.edu/people/faculty/core/profiles/mesmin-destin.html
+      - name: Ivan A. Hernandez
+        link: https://ivanalfonsohernandez.com/
+      - name: Ariel Kalil
+        link: https://harris.uchicago.edu/directory/ariel-kalil
+      - name: Rebecca M. Ryan
+        link: https://gufaculty360.georgetown.edu/s/contact/00336000014RWL2AAO/rebecca-m-ryan
+      - name: David Silverman
+        link: https://dmsilverman.com/
+publications-tagline: "I have a publication in the Journal of Economic Perspectives (2024) and a working paper under review at the Journal of Human Resources (2024)."
+
+
+
+
+
+
+
+    
