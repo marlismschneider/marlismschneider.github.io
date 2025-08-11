@@ -3,35 +3,21 @@ nav:
   - slugid: 1
     text: Home
     link: /
-    isDropDown:
   - slugid: 2
     text: Teaching
     link: /teaching/
   - slugid: 3
     text: CV
     link: /assets/pdf/cv_schneider.pdf
-    isDropDown:
 
-side-image: "/assets/images/logo.jpeg"
-email:
-bluesky:
-twitter:
-
-footer-text: Copyright © 2025
-footer-policy: Privacy Policy
-footer-policy-link: /privacy/
-footer-tos: Terms of Service
-footer-tos-link: /terms/
+profile-image: "/assets/images/logo.jpeg"
 footer-social-media:
-  - icon: "fa-tiktok"
-    link: https://www.tiktok.com/@telemore_ai
-  - icon: "fa-linkedin"
-    link: https://www.linkedin.com/company/telemore/
-  - icon: "fa-instagram"
-    link: https://www.instagram.com/telemore_ai/
-  - icon: "fa-youtube"
-    link: https://www.youtube.com/@TelemoreAI
-
+  - icon: "fa-solid fa-envelope"
+    link: mailto:mailto:marlis.schneider@nhh.no
+  - icon: "fa-brands fa-bluesky"
+    link: https://bsky.app/profile/marlisschneider.bsky.social
+  - icon: "fa-brands fa-twitter"
+    link: https://x.com/MarMaSchneider
 
 
     

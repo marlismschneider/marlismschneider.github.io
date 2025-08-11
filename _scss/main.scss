@@ -14,9 +14,48 @@ nav.navbar {
 
 ul{
     list-style: none;
+    padding-left: 0;
 }
 
 p{
     color: #555555;
-    line-height: 1.8;
+}
+
+.abstract-button{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    border: 1px solid #555555;
+    color: #555555;
+}
+
+
+.right-section{
+    .content-container{
+        .content-description{
+            font-size: 18px;
+        }
+    }
+}
+
+.social-media-container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    .social-item{
+        margin-left: 25px;
+        margin-right: 25px;
+        .social-link{
+            text-decoration: none;
+            color: #555555;
+            font-size: 24px;
+            transition: color 0.3s;
+
+            &:hover{
+                color: #000000;
+            }
+        }
+
+    }
 }
