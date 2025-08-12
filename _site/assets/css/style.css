@@ -349,7 +349,7 @@ nav.navbar {
 
 body {
   background-color: #fff;
-  padding: 50px;
+  padding: 0px 50px 50px;
   font: 16px "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333333;
   font-weight: 400;
@@ -493,7 +493,7 @@ kbd {
 .sidebar {
   position: fixed; /* Makes the sidebar fixed relative to the viewport */
   top: 0; /* Positions it at the top of the viewport */
-  width: 350px; /* Set a desired width for the sidebar */
+  width: 300px; /* Set a desired width for the sidebar */
   height: 100vh; /* Makes the sidebar span the full viewport height */
   overflow-y: auto; /* Allows scrolling within the sidebar if content exceeds height */
   padding: 20px;
@@ -589,9 +589,9 @@ footer {
   flex-basis: content;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1000px;
   }
 }
 @media print, screen and (max-width: 960px) {
