@@ -676,10 +676,10 @@ footer {
 }
 @media print, screen and (max-width: 480px) {
   body {
-    padding: 70px 15px 15px !important;
+    padding: 60px 15px 15px !important;
   }
   .profile-image {
-    max-width: 70%;
+    max-width: 100%;
     height: auto;
   }
 }
